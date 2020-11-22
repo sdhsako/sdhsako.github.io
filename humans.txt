@@ -1,0 +1,4 @@
+humans.txt, credits edition
+w3's css for the layout
+google fonts for the font
+github pages for the hosting
