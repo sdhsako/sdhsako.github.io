@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <!-- embed -->
+    <meta content="sdhsakos website" property="og:title">
+    <meta content="theme settings lol" property="og:description">
+    <meta property="og:site_name" content="sdhsakos website"> 
+
+
+<!--favicon, css, title and background color-->
+<title>sdhsakos website</title>
+<link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico?"/>
+<link rel="stylesheet" href="./index.css">
+<body>
+
+
+<!-- the banner -->
+<div class="header">
+<img class="banner" src="./assets/banner.png">
+</div>
+   <a href="./index.html" style="text-decoration: none; color:#0094FF">< Back</a><br><br>
+
+   <h2><img src="./assets/ietools.png" width=22 height=22 > Theme Options</h2>
+
+   Dark Mode:  
+
+  <label class="theme-switch" for="checkbox">
+    <input type="checkbox" id="checkbox" />
+  </label>
+
+  <br><br>Note: Sadly dark mode will only work on modern browsers. (Tested on IE7 and IE8)
+
+<script>// Get the theme toggle input
+  const themeToggle = document.querySelector(
+    '.theme-switch input[type="checkbox"]'
+  );
+  // Function that will switch the theme based on the if the theme toggle is checked or not
+  function switchTheme(e) {
+    if (e.target.checked) {
+      document.documentElement.setAttribute("data-theme", "dark");
+      
+      // Set the user's theme preference to dark
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+      
+      // Set the user's theme preference to light
+      localStorage.setItem("theme", "light");
+    }
+  }
+  // Add an event listener to the theme toggle, which will switch the theme
+  themeToggle.addEventListener("change", switchTheme, false);
+  </script>
+
+<script>
+  const currentTheme = localStorage.getItem("theme");
+  if (currentTheme) {
+    document.documentElement.setAttribute("data-theme", currentTheme);
+    if (currentTheme === "dark") {
+      themeToggle.checked = true;
+    }
+}
+</script>
+
+<br><br><br>
+sdhsako 2020 - 2021

@@ -9,28 +9,57 @@
 <!--favicon, css, title and background color-->
 <title>sdhsakos website</title>
 <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico?"/>
-<link rel="stylesheet" href="./assets/index.css">
+<link rel="stylesheet" href="./index.css">
 <body>
+
+
 <!-- the banner -->
-<div class="banner">
-<img class="test" src="./assets/banner.png"><img src="./assets/seperator.png"><img src="./assets/trole.png">
+<div class="header">
+<img class="banner" src="./assets/banner.png">
 </div>
-<b>Updated on 4th June, 2021</b> 
-<h2><img src="./assets/computer.png" width=22 height=22 > Welcome to my website!</h2>
-Welcome to my website, here you will find stuff i have decided to host here! Enjoy your stay.
+Updated 6th June, 2021 | <a href="./contact.html" style="text-decoration: none; color:#0094FF">Contact Me</a> | <a href="./theme.html" style="text-decoration: none; color:#0094FF">Theme Options</a>
+
+
+<script>
+  const currentTheme = localStorage.getItem("theme");
+  if (currentTheme) {
+    document.documentElement.setAttribute("data-theme", currentTheme);
+}
+</script>
+
+
+<br><br>
+<b><img src="./assets/computer.png" width=22 height=22><font size="5">  Welcome to my website!</font></b><br><br>
+Welcome to my website, here you will find stuff I have decided to host here! Enjoy your stay.
+<br>
+
+<hr>
+
+
+
+
+<!-- contact me -->
+<b><img src="./assets/msn.png" width=22 height=22><font size="5">  My Social Medias / Ways to Contact Me</font></b><br><br>
+Do you wish to contact me? Probably not. But for the small chance the answer is yes, then here are my social medias / ways to contact.<br>
+>  <b><a href="./contact.html" style="color:#0094FF">Contact Me</a></b><br>
+
+
+
+
+
+
+
+
+
+
+
+
 <br>
 <hr>
 
-<h2><img src="./assets/globe.png" width=22 height=22> My Quick Links</h2>
-> <b><a href="https://malwarewatch.org" style="color:#0094FF">Malware Watch</a></b>, Website which hosts cracked software and malware.<br>
-
-<h2><img src="./assets/msn.png" width=22 height=22 > Contact Me</h2>
-> <b><a href="https://twitter.com/sdhsako" style="color:#0B76B8">Twitter</a></b><br>
-> <b><a style="color:#7289DA">Discord - sdhsako#4120</a></b> (recommended)<br> 
-> <b><a style="color:#D9541E">XMPP/Jabber - sdhsako@xmpp.jp</a></b>
-
-<br><br><br>
-sdhsako 2020 - 2021<br>
-this design has been updated 0 times from initial release
-</html>
+<!-- info -->
+<br>
+sdhsako 2020 - 2021<br><br>
+<a href="http://www.anybrowser.org/campaign/"><img src="./assets/any.gif" alt="Viewable With Any Browser" /></a> <img src="./assets/xp.gif" alt="Works on Windows XP" /></a> <img src="./assets/windows.gif" alt="Made With Windows" /></a> <img src="./assets/notepad.gif" alt="Designed with NOTEPAD.EXE" /></a><br> <img src="./assets/copy.gif" alt="Copy that Floppy!" /></a> <img src="./assets/schoolsucks.gif" alt="School Sucks!" /></a> <img src="./assets/frame.gif" alt="ANTI FRAMES!" /></a>
+</html></html>
 </body>
